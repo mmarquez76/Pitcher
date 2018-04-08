@@ -5,7 +5,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "26.0.2"
     defaultConfig {
-        applicationId "com.mtaylor76.pitchmatch"
+        applicationId "com.mtaylor76.pitcher"
         minSdkVersion 23
         targetSdkVersion 25
         versionCode 1
@@ -34,3 +34,5 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+apply plugin: 'kotlin-android-extensions'
