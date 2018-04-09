@@ -14,11 +14,10 @@ class Menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
-        setSupportActionBar(toolbar)
 
         button_basic_training.setOnClickListener(object: View.OnClickListener {
             override fun onClick(view: View): Unit {
-                val intent = Intent(this@Menu, Menu::class.java)
+                val intent = Intent(this@Menu, Basic::class.java)
                 startActivity(intent)
             }
         })
